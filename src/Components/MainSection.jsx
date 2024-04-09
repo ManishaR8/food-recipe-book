@@ -10,7 +10,7 @@ const MainSection = () => {
     useEffect(() => {
         const getRecipe = async () => {
             try {
-                const res = await fetch(`https://api.spoonacular.com/recipes/random?number=2&includeTags=vegetarian,dessert&excludeTags=quinoa&apiKey=${API_KEY}`);
+                const res = await fetch(`https://api.spoonacular.com/recipes/random?number=18&includeTags=vegetarian,dessert&excludeTags=quinoa&apiKey=${API_KEY}`);
                 const data = await res.json();
                 setRecipes(data.recipes);
 

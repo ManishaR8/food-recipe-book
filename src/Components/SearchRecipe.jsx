@@ -9,7 +9,7 @@ const SearchRecipe = ({ title, img, recipeId}) => {
   const [detailData, setDetailData] = useState([]);
 
   // console.log("line 11", recipeId)
-  const API_KEY = "04b2e36c7f1042c9bfc6ce908a0d21e2";
+  const API_KEY = "043d2493cfdb4dcfa156a1afc4711d7a";
 
   useEffect(() => {
   const getDetail = async () => {

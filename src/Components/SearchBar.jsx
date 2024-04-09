@@ -14,7 +14,7 @@ const SearchBar = () => {
     const fetchData = async () => {
       if (searchText.trim() !== '') {
         try {
-          const res = await fetch(`https://api.spoonacular.com/recipes/complexSearch?query=${searchText}&maxFat=25&number=2&apiKey=${API_KEY}`);
+          const res = await fetch(`https://api.spoonacular.com/recipes/complexSearch?query=${searchText}&maxFat=25&number=4&apiKey=${API_KEY}`);
           const data = await res.json();
 
           // console.log("line 14", data.results[0]);
